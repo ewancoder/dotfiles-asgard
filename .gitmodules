@@ -1,0 +1,3 @@
+[submodule ".ewancoder-dotfiles"]
+	path = .ewancoder-dotfiles
+	url = git@github:ewancoder/dotfiles
