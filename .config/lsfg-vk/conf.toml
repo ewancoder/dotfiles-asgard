@@ -1,0 +1,12 @@
+version = 1
+
+[global]
+dll = "/mnt/data/xplane/ls/ls/Lossless.dll"
+
+[[game]]
+exe = "/mnt/data/xplane/xplaneapp/X-Plane-x86_64"
+multiplier = 3
+flow_scale = 1.0
+performance_mode = true
+hdr_mode = false
+experimental_present_mode = "fifo"
