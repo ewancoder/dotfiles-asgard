@@ -1,0 +1,13 @@
+[Match]
+Name=eno2
+
+[Network]
+Address=192.168.137.10/24
+gateway=192.168.137.1
+DNS=192.168.1.130
+DNS=1.1.1.1
+DNS=8.8.8.8
+
+[Route]
+Gateway=192.168.137.1
+Metric=100
