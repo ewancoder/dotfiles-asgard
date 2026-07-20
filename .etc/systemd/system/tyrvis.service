@@ -1,0 +1,16 @@
+[Unit]
+Description=Tyrvis
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=tyr
+Environment=HOME=/home/tyr
+WorkingDirectory=/mnt/data/tyrvis
+ExecStart=/usr/bin/tmux new-session -d -s tyrvis /home/tyr/.local/bin/tyrvis.sh
+ExecStop=/usr/bin/tmux kill-session -t tyrvis
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
